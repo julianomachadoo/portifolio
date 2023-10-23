@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juliano Machado</title>
+    <link rel="stylesheet" href="principal.css" />
+    <link rel="stylesheet" href="paginas.css" />
+  </head>
+  <body>
+    <header>
+      <div class="apresentacao">
+        <h1>Juliano Machado</h1>
+      </div>
+      <nav class="links">
+        <a class="link" href="index.html">Voltar</a>
+        <a class="link" href="sobre.html">Sobre</a>
+        <a class="link" href="formacao.html">Formação</a>
+        <a class="link" href="portifolio.html">Portifólio</a>
+      </nav>
+    </header>
+    <div class="conteudo conteudo--contato">
+      <a class="contato--link email" href="#">email</a>
+      <a
+        class="contato--link linkedin"
+        href="https://www.linkedin.com/in/julianomachadoo/"
+        target="_blank"
+        >linkedin</a
+      >
+      <a class="contato--link wpp" href="#">whatsapp</a>
+    </div>
+    <div class="conteudo conteudo--contato caixa--texto">
+      <p id="texto"></p>
+    </div>
+  </body>
+  <script>
+    // Selecionando elementos html
+    let email = document.querySelector(".email");
+    let linkedin = document.querySelector(".linkedin");
+    let wpp = document.querySelector(".wpp");
+    let caixaTexto = document.getElementById("texto");
+
+    // Adicionando evento de click
+    email.addEventListener("click", () => {
+      caixaTexto.innerHTML = "julmachadoramos@gmail.com";
+    });
+
+    // Adicionando evento de click
+    wpp.addEventListener("click", () => {
+      caixaTexto.innerHTML = "(79) 998801267";
+    });
+  </script>
+</html>

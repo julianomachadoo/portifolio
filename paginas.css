@@ -1,0 +1,46 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10rem;
+}
+
+.apresentacao {
+  margin: auto;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.link {
+  margin: 0.7rem 1rem 0 0;
+}
+
+.conteudo {
+  width: 80%;
+  margin: 3rem auto 0 auto;
+  text-align: justify;
+}
+
+.conteudo--portifolio,
+.conteudo--contato {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.conteudo--portifolio--link {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-size: large;
+  font-weight: 700;
+}
+
+.caixa--texto {
+  padding: 1rem 2rem;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2rem;
+  width: 50%;
+}

@@ -1,0 +1,59 @@
+/* Fonte personalizada */
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;600;700&family=Roboto+Condensed:wght@300&display=swap");
+
+/* Variáveis de cor */
+:root {
+  --main-bg-color: #f7f6e4;
+  --main-text-color: #5f3711;
+  --secondary-color: #d4c098;
+  --third-color: #e2d5c1;
+}
+
+body {
+  text-align: center;
+  background-color: var(--main-bg-color);
+  font-family: "Playpen Sans", cursive;
+  margin: 0 2rem;
+}
+
+p,
+li {
+  color: var(--main-text-color);
+}
+
+body h1 {
+  color: var(--main-text-color);
+  font-weight: 700;
+}
+
+body h2 {
+  margin: 3rem;
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+
+.links {
+  display: inline-block;
+  margin: auto;
+}
+
+/* Modelo de botão */
+.link,
+a {
+  border: 2px solid var(--main-text-color);
+  text-decoration: none;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding: 0.3rem;
+  margin-right: 1rem;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+}
+
+/* Adicionando efeito ao botão */
+a:hover,
+.link:hover {
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  transition: 0.15s;
+}
